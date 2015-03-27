@@ -44,6 +44,11 @@ public class PrimeTest {
 		assertEquals(list(3,3),Primes.getPrimeFactors(9));
 	}
 	
+	@Test
+	public void test325115() {
+		assertEquals(list(5, 7, 7, 1327),Primes.getPrimeFactors(325115));
+	}
+	
 	
 	private List<Integer> list(Integer ...integers) {
 		return Arrays.asList(integers);
