@@ -8,7 +8,6 @@ public class PrimeNumberGeneration {
 	public static List<Integer> generate(int i) {
 		List<Integer> primes = new ArrayList<Integer>();
 		int candidate = 2;
-		System.out.println(isPrime(4));
 		for(;candidate < i; candidate++){
 			if (isPrime(candidate)){
 				primes.add(candidate);
