@@ -14,8 +14,14 @@ public class PrimeTest {
 		assertEquals(list(),Primes.getPrimeFactors(1));
 	}
 	
-	private List<Integer> list() {
-		return Arrays.asList();
+	@Test
+	public void testTwo() {
+		assertEquals(list(2),Primes.getPrimeFactors(2));
+	}
+	
+	
+	private List<Integer> list(Integer ...integers) {
+		return Arrays.asList(integers);
 	}
 
 }
