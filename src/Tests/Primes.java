@@ -6,7 +6,10 @@ import java.util.List;
 public class Primes {
 
 	public static List<Integer> getPrimeFactors(int i) {
-		return new ArrayList<Integer>();
+		List<Integer> primes = new ArrayList<Integer>();
+		if (i ==2)
+			primes.add(2);
+		return primes;
 	}
 
 }
