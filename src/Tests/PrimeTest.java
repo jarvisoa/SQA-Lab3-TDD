@@ -29,6 +29,16 @@ public class PrimeTest {
 		assertEquals(list(2,2),Primes.getPrimeFactors(4));
 	}
 	
+	@Test
+	public void testSix() {
+		assertEquals(list(2,3),Primes.getPrimeFactors(6));
+	}
+	
+	@Test
+	public void testEight() {
+		assertEquals(list(2,2,2),Primes.getPrimeFactors(8));
+	}
+	
 	
 	private List<Integer> list(Integer ...integers) {
 		return Arrays.asList(integers);
