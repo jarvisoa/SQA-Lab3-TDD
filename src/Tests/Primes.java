@@ -7,7 +7,7 @@ public class Primes {
 
 	public static List<Integer> getPrimeFactors(int i) {
 		List<Integer> primes = new ArrayList<Integer>();
-		if(i % 2 == 0){
+		while(i % 2 == 0){
 			primes.add(2);
 			i /= 2;
 		}
